@@ -98,9 +98,26 @@ def partida():
         ganhador = 0
     return ganhador
 
+def campeonato():
+    md3 = 3
+    usuario = 0
+    computador = 0
+    jogada = 1
+    while md3 >= 1:
+        print("**** Rodada",jogada,"****")
+        ganhador = partida()
+        if ganhador == "computador":
+            computador += 1
+        else:
+            usuario += 1
+        md3 -= 1
+        jogada += 1
+    print("**** Final do campeonato! ****")
+    print("Placar: Você",usuario,"X",computador,"Computador")
 
 
 
+#implementar uma opção para acima de 2!!!
 print("Bem-vindo ao jogo do NIM! Escolha: ")
 print("1 - para jogar uma partida isolada ")
 opcao = int(input("2 - para jogar um campeonato "))
@@ -110,4 +127,4 @@ if opcao == 1:
     partida()
 else:
     print("Voce escolheu um campeonato!")
-    # campeonato()
+    campeonato()
