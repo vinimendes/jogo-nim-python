@@ -1,2 +1,7 @@
-# jogo-nim-python
-Jogo nim
+# Jogo Nim
+
+Exercício proposto pelo curso da Coursera
+
+Nesse jogo, n peças são inicialmente dispostas numa mesa ou tabuleiro. Dois jogadores jogam alternadamente, retirando pelo menos 1 e no máximo m peças cada um. Quem tirar as últimas peças possíveis ganha o jogo.
+
+O desafio é implementar uma estratégia para que o computador vença.
