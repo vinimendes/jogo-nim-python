@@ -117,7 +117,6 @@ def campeonato():
 
 
 
-#implementar uma opção para acima de 2!!!
 print("Bem-vindo ao jogo do NIM! Escolha: ")
 print("1 - para jogar uma partida isolada ")
 opcao = int(input("2 - para jogar um campeonato "))
@@ -125,6 +124,8 @@ opcao = int(input("2 - para jogar um campeonato "))
 if opcao == 1:
     print("Voce escolheu uma partida isolada!")
     partida()
-else:
+elif opcao == 2:
     print("Voce escolheu um campeonato!")
     campeonato()
+else:
+    print("Por favor, digite uma opção válida")
